@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery with Descriptions</title>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .image-card {
+            width: 300px;
+            margin: 10px;
+            text-align: center; /* Center text horizontally within the image card */
+        }
+        .image-card img {
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .image-card img:hover {
+            transform: scale(1.1);
+        }
+        #back-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Image Gallery</h1>
+    <div class="gallery-container">
+        <div class="image-card">
+            <a href="image1.jpg">
+                <img src="image1.jpg" alt="Image 1" onclick="showImage('image1.jpg')">
+            </a>
+            <p>Description for Image 1</p>
+        </div>
+        <div class="image-card">
+            <a href="./imageProject/KLCC/resize_tree.jpg">
+                <img src="./imageProject/KLCC/resize_tree.jpg" alt="Image 2" onclick="showImage('image2.jpg')">
+            </a>
+            <p>Description for Image 2</p>
+        </div>
+        <!-- Add more image cards with descriptions as needed -->
+
+        <div class="image-card">
+            <a href="download.exe">
+                <img src="download-icon.png" alt="Download Icon">
+            </a>
+            <p><a href="download.exe">Click to download .exe file</a></p>
+        </div>
+    </div>
+    
+    <button id="back-button">Go Back</button>
+
+    <script>
+        function showImage(imageUrl) {
+            window.location.href = imageUrl;
+        }
+
+        const backButton = document.getElementById('back-button');
+        backButton.addEventListener('click', () => {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>

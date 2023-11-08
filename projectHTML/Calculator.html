@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator - assignment</title>
+    <style>
+        body {
+            background-color: #333334;
+        }
+        
+        h1 {
+            font-size: 50px; 
+            color: #b8d4f4; 
+            text-align: center;
+            font-family: sans-serif;
+        }
+        h5{
+            font-size: 20px; 
+            color: #a8a8b4; 
+            text-align: justify;
+            font-family: sans-serif;
+            margin: 10px 0px;
+        }
+        h6{
+            font-size: 20px; 
+            color: #434344; 
+            text-align: justify;
+            font-family: sans-serif;
+            margin: 10px 0px;
+        }
+        p{
+            font-size: 25px; 
+            color: #b8d4f4a4; 
+            text-align: justify;
+            font-family: sans-serif;
+            margin: 50px 50px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .image-card {
+            width: 300px;
+            margin: 10px;
+            margin: 50px 30px;
+        }
+        .image-card img {
+            width: 100%;
+            transition: transform 0.7s;
+        }
+        .image-card img:hover {
+            transform: scale(1.1);
+        }
+        .video-container {
+            max-width: 100%; /* Set a maximum width relative to the parent container */
+        }
+
+        .video-container video {
+            width: 100%; /* Make the video fill its container */
+            height: auto; /* Maintain the video's aspect ratio */
+        }
+        .frame {
+            border: 2px solid; 
+            background-color:#b8d4f4;
+            padding: 20px; 
+            border-radius: 15px;
+            margin: 20px; 
+            align-items: center; 
+        }
+        .line-small {
+            border: none; /* Remove the default border */
+            background-color:#b8d4f4; /* Set the background color (red in this example) */
+            height: 2px; /* Set the height (thickness) of the line */
+        
+        }
+        .line-big {
+            border: none; /* Remove the default border */
+            background-color:#b8d4f4; /* Set the background color (red in this example) */
+            height: 3px; /* Set the height (thickness) of the line */
+        
+        }
+    </style>
+</head>
+<body>
+    <hr class="line-small">
+    <h1><b>Calculator - Tkinter</b></h1>
+    <hr class="line-small">
+    <hr class="line-big">
+    <p>In the calculator assignment, there have 3 assignment and will improve the calculator 
+        continuously. assignment 1 is interactive Console-based basic CG Calculator. assignment 
+        2 is using tkinter to do a GUI-Tinter CG Calculator. assignment 3 is improve and 
+        expanding it into an advanced mathematical Calculator application  </p>
+    <p>In the assignment 1, there is a interactive Console-based basic CG Calculator. It have 
+        three different type of calculation mode which is Basic Arithmetic, 2D Vector and 2X2 
+        Matrix. Besides, calculator have provided “Help” to assist user to use this calculator. There also have 
+        “Exit” to end this calculator program.
+    </p>
+    <div class="frame" > 
+        <div class="gallery-container">
+        
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_main.png">
+                    <img src="./imageProject/calculator/v1_main.png" alt="Menuv1" onclick="showImage(Menuv1)">
+                </a>
+                
+                <h6>Menu of calculator</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_help.png">
+                    <img src="./imageProject/calculator/v1_help.png" alt="Helpv1" onclick="showImage(Helpv1)">
+                </a>
+                
+                <h6>Instruction of calculator</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_1.png">
+                    <img src="./imageProject/calculator/v1_1.png" alt="Basic Arithmetic v1" onclick="showImage()">
+                </a>
+                
+                <h6>Basic arithmetic</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_1.3.png">
+                    <img src="./imageProject/calculator/v1_1.3.png" alt="multiplication" onclick="showImage()">
+                </a>
+                
+                <h6>Basic arithmetic - Multiplication</h6>
+            </div>
+            
+            
+        </div>
+        <div class="gallery-container">
+            
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_2.png">
+                    <img src="./imageProject/calculator/v1_2.png" alt="2dVector" onclick="showImage">
+                </a>
+                
+                <h6>2D Vector</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_2.3.png">
+                    <img src="./imageProject/calculator/v1_2.3.png" alt="scalar multiplication" onclick="showImage">
+                </a>
+                
+                <h6>2D Vector - scalar multiplication</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_3.png">
+                    <img src="./imageProject/calculator/v1_3.png" alt="2X2 Matrix" onclick="showImage">
+                </a>
+                
+                <h6>2X2 Matrix</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v1_3.3.png">
+                    <img src="./imageProject/calculator/v1_3.3.png" alt="Matrix multiplication" onclick="showImage">
+                <h6>2X2 Matrix - Matrix multiplication</h6>
+                </a>
+                
+            </div>
+
+        </div>
+        
+    </div>
+    <p>In the assignment 2 is to construct and improve the source code from the prior 
+        interactive Console-based basic CG Calculator. All standard mathematical
+        operations, such as addition, subtraction, multiplication, and division, are included in this
+        calculator.
+        This GUI-Tkinter CG Calculator also supports vectors (2D vectors) and
+        operations like addition, multiplication, and subtraction. Addition, multiplication, and
+        subtraction are examples of matrix operations on a 2x2 matrix. Only tkinter is used for
+        the Graphics User Interface (GUI) in this second assignment.
+    </p>
+    <div class="frame" > 
+        <div class="gallery-container">
+        
+            <div class="image-card">
+                <a href="./imageProject/calculator/v2_main.png">
+                    <img src="./imageProject/calculator/v2_main.png" alt="Menu" onclick="showImage">
+                </a>
+                
+                <h6>Menu of calculator</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v2_help.png">
+                    <img src="./imageProject/calculator/v2_help.png" alt="Help" onclick="showImage"> 
+                </a>
+                
+                <h6>Instruction of calculator</h6>
+            </div>
+        
+        </div>
+        <div class="gallery-container">
+            <div class="image-card">
+                <a href="./imageProject/calculator/v2_1.png">
+                    <img src="./imageProject/calculator/v2_1.png" alt="Basic arithmetic" onclick="showImage">
+                </a>
+                
+                <h6>Basic arithmetic</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v2_2.png">
+                    <img src="./imageProject/calculator/v2_2.png" alt="2dVector" onclick="showImage">
+                </a>
+                
+                <h6>2D Vector</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v2_3.png">
+                    <img src="./imageProject/calculator/v2_3.png" alt="2X2 Matrix" onclick="showImage">
+                </a>
+                
+                <h6>2X2 Matrix</h6>
+            </div>
+        </div>
+    </div>
+    <p>
+        In the assignment 3 is to improve our source code from the previous GUI-Tkinter
+        Calculator by expanding it into an advanced mathematical Calculator application.
+        This GUI-Tkinter Calculator includes all the standard mathematical operations,
+        such as addition, subtraction, multiplication, and division as well as the Basic
+        Trigonometry also include in this calculator.
+    </p>
+    <div class="frame" > 
+        <div class="gallery-container">
+        
+            <div class="image-card">
+                <a href="./imageProject/calculator/v3_main.png">
+                    <img src="./imageProject/calculator/v3_main.png" alt="Menu" onclick="showImage">
+                </a>
+                
+                <h6>Menu of calculator</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v3_1.png">
+                    <img src="./imageProject/calculator/v3_1.png" alt="Basic arithmetic" onclick="showImage">
+                </a>
+                
+                <h6>Basic arithmetic</h6>
+            </div>
+        
+        </div>
+        <div class="gallery-container">
+            <div class="image-card">
+                <a href="./imageProject/calculator/v3_2.png">
+                    <img src="./imageProject/calculator/v3_2.png" alt="Basic 2dVector" onclick="showImage">
+                </a>
+                
+                <h6>2D Vector</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v3_3.png">
+                    <img src="./imageProject/calculator/v3_3.png" alt="2X2 Matrix" onclick="showImage">
+                </a>
+                
+                <h6>2X2 Matrix</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/calculator/v3_4.png">
+                    <img src="./imageProject/calculator/v3_4.png" alt="Conversion" onclick="showImage">
+                </a>
+
+                <h6>Conversion of Polar and Cartesian coordinate</h6>
+            </div>
+            
+        </div>
+    </div>
+    <h5>Contributions: </h5>
+    <h5>Assignment 1 : CHEAH PEI YIN</h5>
+    <h5>Assignment 2 : CHEAH PEI YIN, MUHAMMAD IQRAM DANIEL BIN MOHAMAD ZAKI</h5>
+    <h5>Assignment 3 : CHEAH PEI YIN, MUHAMMAD AIDIL FIRDAUS BIN KHAIRUDDIN</h5>
+
+    <script>
+        function showImage(imageUrl) {
+            window.location.href = imageUrl;
+        }
+
+    </script>
+</body>
+</html>

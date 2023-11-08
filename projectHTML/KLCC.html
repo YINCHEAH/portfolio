@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KLCC - assignment</title>
+    <style>
+        body {
+            background-color: #333334;
+        }
+        
+        h1 {
+            font-size: 50px; 
+            color: #b8d4f4; 
+            text-align: center;
+            font-family: sans-serif;
+        }
+        h5{
+            font-size: 20px; 
+            color: #a8a8b4; 
+            text-align: justify;
+            font-family: sans-serif;
+            margin: 10px 0px;
+        }
+        h6{
+            font-size: 20px; 
+            color: #434344; 
+            text-align: justify;
+            font-family: sans-serif;
+            margin: 10px 0px;
+        }
+        p{
+            font-size: 25px; 
+            color: #b8d4f4a4; 
+            text-align: justify;
+            font-family: sans-serif;
+            margin: 50px 50px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .image-card {
+            width: 300px;
+            margin: 10px;
+            margin: 50px 30px;
+        }
+        .image-card img {
+            width: 100%;
+            transition: transform 0.7s;
+        }
+        .image-card img:hover {
+            transform: scale(1.1);
+        }
+        .video-container {
+            max-width: 100%; /* Set a maximum width relative to the parent container */
+        }
+
+        .video-container video {
+            width: 100%; /* Make the video fill its container */
+            height: auto; /* Maintain the video's aspect ratio */
+        }
+        .frame {
+            border: 2px solid; 
+            background-color:#b8d4f4;
+            padding: 20px; 
+            border-radius: 15px;
+            margin: 20px; 
+            align-items: center; 
+        }
+        .line-small {
+            border: none; /* Remove the default border */
+            background-color:#b8d4f4; /* Set the background color (red in this example) */
+            height: 2px; /* Set the height (thickness) of the line */
+        
+        }
+        .line-big {
+            border: none; /* Remove the default border */
+            background-color:#b8d4f4; /* Set the background color (red in this example) */
+            height: 3px; /* Set the height (thickness) of the line */
+        
+        }
+    </style>
+</head>
+<body>
+    <hr class="line-small">
+    <h1><b>Drawing a KLCC - PyOpenGL</b></h1>
+    <hr class="line-small">
+    <hr class="line-big">
+    <p>In this assignment is to construct a computer generated image (CUI) of the KLCC 
+        building using the OpenGL basic primitives. To fulfill this assignment’s aim, 
+        there has import Math library which is used to calculate some special shape point. 
+        Other than that, the classes are created to classify the main building, which is KLCC 
+        building. Besides that, the class element is created to use to decorate the KLCC 
+        building to let it become more beautiful.
+    </p>
+
+    <div class="frame" > 
+        <div class="gallery-container">
+        
+            <div class="image-card">
+                <a href="./imageProject/KLCC/referenceKLCC.jpg">
+                    <img src="./imageProject/KLCC/referenceKLCC.jpg" alt="Reference" onclick="showImage(Reference)">
+                </a>
+                <h6>Reference image from the Google</h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/KLCC/KLCC_assignment1_Individual.png">
+                    <img src="./imageProject/KLCC/KLCC_assignment1_Individual.png" alt="FinalImage" onclick="showImage(FinalImage)">
+                </a>
+                
+                <h6>Drawing KLCC by using OpenGL</h6>
+            </div>
+        </div>
+    
+        <div class="gallery-container">
+            <div class="image-card">
+                <a href="./imageProject/KLCC/MoveKLCC.jpg">
+                    <img src="./imageProject/KLCC/MoveKLCC.jpg" alt="MoveKLCC" onclick="showImage(MoveKLCC)">
+                </a>
+                
+                <h6>The position of KLCC building is move to left side.
+                </h6>
+            </div>
+            <div class="image-card">
+                <a href="./imageProject/KLCC/resize_tree.jpg">
+                    <img src="./imageProject/KLCC/resize_tree.jpg" alt="ResizeTree" onclick="showImage(ResizeTree)">
+                </a>
+                
+                <h6>The size of tree in right side is become smaller.</h6>
+            </div>
+  
+        </div>
+    </div>
+    <h5>Individual contribution: CHEAH PEI YIN</h5>
+    
+    <script>
+        function showImage(imageUrl) {
+            window.location.href = imageUrl;
+        }
+
+    </script>
+</body>
+</html>
