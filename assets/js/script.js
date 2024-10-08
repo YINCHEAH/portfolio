@@ -84,15 +84,19 @@ const filterFunc = function (selectedValue) {
 
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+
+    }else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
+
     } else {
       filterItems[i].classList.remove("active");
+
     }
 
   }
 
 }
+
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -156,4 +160,17 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+}
+
+// Select the gallery container
+const galleryContainer = document.querySelector('.gallery-container');
+
+galleryContainer.addEventListener('wheel', (e) => {
+  console.log('Wheel event triggered'); // Debug log
+  e.preventDefault(); // Prevent vertical scroll
+  galleryContainer.scrollLeft += e.deltaY; // Scroll horizontally based on vertical wheel scroll
+});
+
+function goBack() {
+  window.history.back(); // Navigate to the previous page in history
 }
