@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="project-content">     
+        <header>
+            <h2 class="h2 article-title">3D Model</h2>
+        </header>
+        <section class="project-text">
+            <p>Here is show the 3D model using blender and nomad. In this page I have using three.js to show my 3D model.</p>
+
+            <div class="wrap-container">
+                <figure>
+                    <a href="./assets/images/project/3D/p1.png">
+                        <img class="img-3d" src="./assets/images/project/3D/p1.png" alt="">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="./assets/images/project/3D/p2.png">
+                        <img class="img-3d" src="./assets/images/project/3D/p2.png" alt="">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="./assets/images/project/3D/p3.png">
+                        <img class="img-3d" src="./assets/images/project/3D/p3.png" alt="">
+                    </a>
+                </figure>
+                <video controls style="width: 259px;">
+                    <source  src="./assets/images/project/3D/v5.mp4" type="video/mp4">
+                    Video not support T^T
+                </video>  
+                <figure>
+                    <a href="./assets/images/project/3D/p4.png">
+                        <img class="img-3d" style="width: 270px;" src="./assets/images/project/3D/p4.png" alt="">
+                    </a>
+                </figure>
+                <video controls >
+                    <source src="./assets/images/project/3D/v1.mp4" type="video/mp4">
+                    Video not support T^T
+                </video>
+                <video controls >
+                    <source src="./assets/images/project/3D/v2.mp4" type="video/mp4">
+                    Video not support T^T
+                </video>
+                <video controls >
+                    <source src="./assets/images/project/3D/v3.mp4" type="video/mp4">
+                    Video not support T^T
+                </video>
+                <video controls >
+                    <source src="./assets/images/project/3D/v4.mp4" type="video/mp4">
+                    Video not support T^T
+                </video>
+            </div>
+
+             <br>
+            <div class="button-container">
+                <button onclick="goBack()">Back</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <!--
+    <script type="module" src="./assets/js/threeD.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/build/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        camera.position.z = 5;
+
+        function animate() {
+        requestAnimationFrame(animate);
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+        renderer.render(scene, camera);
+        }
+
+        animate();
+
+    </script>-->
+
+
+    <!--
+        - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+    
+</body>
+</html>
