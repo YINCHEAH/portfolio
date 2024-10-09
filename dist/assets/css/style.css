@@ -296,7 +296,23 @@ article.active {
   margin-top: 7px;
 }
 
+.wrap-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+  box-sizing: border-box;
+}
 
+.img-3d{
+  height: 300px;
+  
+
+}
+
+.wrap-container video{
+  width: 49.5%;
+}
 
 
 
