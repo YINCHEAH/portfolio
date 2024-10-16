@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Year Project</title>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="project-content">
+        <header>
+            <h2 class="h2 article-title">FYP - Enhance Turbid Underwater Image</h2>
+        </header>
+        <section class="project-text">
+            <p>
+                This is my final year project which is to enhance the turbid underwater image using technique multi-scale fusion and decomposing curve of attenuating color.
+            </p>
+            <p>
+                Aim: The aim of this project is To enhance the turbid underwater image to getting a clear underwater image.
+            </p>
+            <p>
+                Objectiv: The objective of this project is to using Multi-Scale Fusion to remove turbid underwater image. 
+                Besides that, enhance the Multi-Scale Fusion technique using Decomposing Curve of Attenuating Color. 
+            </p><br>
+            <p>
+                In my FYP, I have research several techniques that can be enhance the turbid underwater image and I using technique Multi-Scale Fusion.
+                The Multi-Scale Fusion is a technique to using two method (Equalization Histrogram with Gray World and Dark Channel Perior) to get the each feature.
+                Then, using Multi-Scale Fusion to fusion the feature and get a clear underwater image. 
+                The benchmark result have show the Multi-Scale Fusion have getting a clear image.
+                Furthemore, I have using the Decomposing Curve of Attenuating Color to replace Dark Channel Perior to getting more better quality clear image.
+                The benchmark result have shown the Decomposing Curve of Attenuating Color have better result compare the Dark Channel Perior. 
+                The benchmark result after using the Multi-Scale Fusion also shown the 
+                new method (Equalization Histrogram with Gray World and Decomposing Curve of Attenuating Color) is better than the
+                default method (Equalization Histrogram with Gray World and Dark Channel Perior).
+
+            </p>
+            <br>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <figure>
+                        <a href="./assets/images/project/FYP/cover.png">
+                            <img src="./assets/images/project/FYP/cover.png" alt="">
+                        </a>
+                        <figcaption>1. Cover</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="./assets/images/project/FYP/interface.png">
+                            <img src="./assets/images/project/FYP/interface.png" alt="">
+                        </a>
+                        <figcaption>2. Overall interface</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="./assets/images/project/FYP/result.png">
+                            <img src="./assets/images/project/FYP/result.png" alt="">
+                        </a>
+                        <figcaption>3. Output</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="./assets/images/project/FYP/compare.png">
+                            <img src="./assets/images/project/FYP/compare.png" alt="">
+                        </a>
+                        <figcaption>4. Compare technique</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+            <div class="button-container">
+                <button onclick="goBack()">Back</button>
+            </div>
+            
+            
+        </section>
+        
+    </main>
+    <!--
+        - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+        - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
